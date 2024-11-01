@@ -32,7 +32,7 @@ def fetch_and_store_opensea_data():
         retries = 0  
 
         while retries < max_retries:
-            current_limit = limit if next_cursor is None else limit + 1  
+            current_limit = limit if next_cursor is None else limit
 
             
             url = f"https://api.opensea.io/api/v2/collections?limit={current_limit}" + (f"&next={next_cursor}&order_by=market_cap" if next_cursor else "&order_by=market_cap")
