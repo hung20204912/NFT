@@ -1,0 +1,5 @@
+mongo_uri=mongodb://localhost:27017/
+db_name=NFT
+collection_name=NFT_collection4
+api_calls=3
+limit=10
